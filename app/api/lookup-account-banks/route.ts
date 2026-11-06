@@ -39,7 +39,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const paystackSecretKey = process.env.PAYSTACK_SECRET_KEY || 'sk_live_63e86b3ca2570289120218429194d10937bad6db';
+    const paystackSecretKey = process.env.PAYSTACK_SECRET_KEY;
 
     if (!paystackSecretKey) {
       console.error('PAYSTACK_SECRET_KEY not configured');
