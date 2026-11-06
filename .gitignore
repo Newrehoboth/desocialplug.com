@@ -31,3 +31,6 @@ next-env.d.ts
 .vinext/
 .cloudflare/
 .wrangler/
+
+# IDE settings (personal preferences)
+.vscode/
