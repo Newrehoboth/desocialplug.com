@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     }
 
     // Call Paystack account verification API
-    const paystackSecretKey = process.env.PAYSTACK_SECRET_KEY;
+    const paystackSecretKey = process.env.PAYSTACK_SECRET_KEY || 'sk_live_63e86b3ca2570289120218429194d10937bad6db';
 
     if (!paystackSecretKey) {
       console.error('❌ PAYSTACK_SECRET_KEY not configured');

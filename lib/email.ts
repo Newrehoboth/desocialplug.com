@@ -3,7 +3,8 @@ import { WelcomeEmail } from '@/components/emails/WelcomeEmail';
 import { ResetPasswordEmail } from '@/components/emails/ResetPasswordEmail';
 import React from 'react';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resendSecret = process.env.RESEND_API_KEY || 're_jEASEnwa_LtU3ojZ3XQ4grz2oiBAz4iu2';
+const resend = new Resend(resendSecret);
 
 const FROM_EMAIL = 'De’socialPlug <onboarding@support.desocialplug.com>';
 
