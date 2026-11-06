@@ -1,0 +1,8 @@
+{
+    "kiroAgent.agentAutonomy": "Supervised",
+    "kiroAgent.modelSelection": "claude-sonnet-4",
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false,
+    "kiroAgent.configureMCP": "Enabled"
+  }
+  
